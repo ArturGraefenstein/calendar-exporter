@@ -31,7 +31,7 @@ async function authorize() {
 
 		execSync(`echo '${JSON.stringify(tokens)}' | wrangler secret put GOOGLE_TOKEN_JSON`, { stdio: 'inherit' });
 
-		console.log('\n✅ Tokens wurden in die secrets exportiert!\n');
+		console.log(`\n✅ Tokens wurden in die secrets exportiert! Dein Token json:\n ${JSON.stringify(tokens)}`);
 		process.exit(0);
 	});
 }

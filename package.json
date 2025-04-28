@@ -11,7 +11,7 @@
 		"typegen": "wrangler types",
 		"generate-token": "set -a && source .env && set +a && node generate-token.js",
 		"generate-uuid": "node generate-uuid.js",
-		"setup": "npm run generate-token && npm run generate-uuid"
+		"setup": "npm run typegen && npm run generate-token && npm run generate-uuid"
 	},
 	"devDependencies": {
 		"@cloudflare/vitest-pool-workers": "^0.8.19",
