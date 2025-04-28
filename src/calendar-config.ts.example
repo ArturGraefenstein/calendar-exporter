@@ -1,0 +1,4 @@
+export const CALENDAR_ID_MAP = {
+	"primary": { id: "primary", name: "My primary calendar" },
+	"vacations": { id: "c_98s7d9uh83ud0k@group.calendar.google.com", name: "My vacations calendar" }
+}
